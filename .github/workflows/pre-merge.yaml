@@ -25,12 +25,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Set up JDK
-        uses: actions/setup-java@v4.5.0
-        with:
-          java-version: ${{ matrix.jdk }}
-          distribution: 'temurin'
-          cache: maven
+     # - name: Set up JDK
+     #   uses: actions/setup-java@v4.5.0
+     #   with:
+      #    java-version: ${{ matrix.jdk }}
+       #   distribution: 'temurin'
+       #   cache: maven
       #- name: Build with Maven of ${{ matrix.project }}
        # if: ${{ matrix.project != '' }}
        # working-directory: ${{ matrix.project }}
